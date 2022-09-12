@@ -1,0 +1,1 @@
+# Python/Django backend for the React Restaurant project in the AINC Bootcamp
