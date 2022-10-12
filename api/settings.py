@@ -65,6 +65,9 @@ if APPENGINE_URL:
 
     ALLOWED_HOSTS = [urlparse(APPENGINE_URL).netloc, "*.gitpod.io"]
     CSRF_TRUSTED_ORIGINS = [APPENGINE_URL]
+    CORS_ALLOWED_ORIGIN_REGEXES = [
+        r"^https://.*\.gitpod\.io$",
+    ]
     SECURE_SSL_REDIRECT = True
 else:
     ALLOWED_HOSTS = ['*']
